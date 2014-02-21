@@ -1,1 +1,1 @@
-# My Lineman Application
+# angularjs implementation with unit tests in coffeescript
