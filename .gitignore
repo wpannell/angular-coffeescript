@@ -1,8 +1,8 @@
-.DS_Store
-
 /.idea
 /node_modules
 /dist
 /generated
 
+.DS_Store
 .sass-cache
+libpeerconnection.log
