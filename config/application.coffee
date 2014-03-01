@@ -49,3 +49,35 @@ module.exports = (lineman) ->
     options:
       growl: true
 
+  jshint:
+    files: ["<%= files.js.app %>"]
+    options:
+      globals:
+        _: false #lodash
+        $: false #jquery
+
+        #jasmine
+        jasmine: false
+        describe: false
+        it: false
+        expect: false
+        beforeEach: false
+        waits: false
+        runs: false
+
+    # enforcing options
+      curly: true
+      eqeqeq: true
+      latedef: true
+      newcap: true
+      noarg: true
+
+    # relaxing options
+      boss: true
+      eqnull: true
+      sub: true
+
+    # environment/globals
+      browser: true
+      devel: true
+      globalstrict: true
