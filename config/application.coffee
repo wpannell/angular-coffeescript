@@ -80,4 +80,3 @@ module.exports = (lineman) ->
     # environment/globals
       browser: true
       devel: true
-      globalstrict: true
