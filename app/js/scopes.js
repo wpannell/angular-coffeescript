@@ -1,6 +1,8 @@
 /* jshint globalstrict: true */
 'use strict';
 
+function initialWatchValue() { }
+
 function Scope() {
   this.$$watchers = [];
 }
@@ -8,7 +10,8 @@ function Scope() {
 Scope.prototype.$watch = function(watchFn, listenerFn) {
   var watcher = {
     watchFn: watchFn,
-    listenerFn: listenerFn
+    listenerFn: listenerFn || function() {},
+    last: initialWatchValue
   };
   this.$$watchers.push(watcher);
 };
